@@ -70,7 +70,7 @@ export class CustomPipe implements PipeTransform {
     if(args == 'morse') {
       let output: string='';
       for(let i = 0; i < value.length; i++) {
-        output += this.morseCode[value.at(i)!];
+        output += this.morseCode[value.at(i)!] + " ";
       }
       return output;
     }else if(args == 'MD5'){
